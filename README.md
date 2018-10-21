@@ -8,3 +8,6 @@ This project shows examples of many common data structures and algorithms implem
 
 ### Data Structures
 * [Stack](struct/stack.cpp)
+
+### Functions
+coming soon
