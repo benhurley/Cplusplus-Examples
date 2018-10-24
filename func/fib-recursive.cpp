@@ -7,8 +7,8 @@
     This version is the least optimized, with a slow runtime and wasted space due to continuous
     recursive calls filling stack space.
 
-    Also in this version, once the double cannot be expressed as an integer,
-    it is estimated as an exponent.
+    Also in this version, once the double cannot be expressed,
+    it is estimated as an exponent instead of overflowing.
 
     Runtime: O(2^n). (Actually around O(1.6^n) specifically because right
     subtree is never as large as the left subtree, but 0(2^n) upperbound

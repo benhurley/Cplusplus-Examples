@@ -9,8 +9,8 @@
     following two fib computations (fib[i+1] and fib[i+2]). This means
     we dont need to waste the extra space, and can use temp ints instead.
 
-    Also in this version, once the double cannot be expressed as an integer,
-    it is estimated as an exponent. 
+    Also in this version, once the double cannot be expressed,
+    it is estimated as an exponent instead of overflowing.
 
     Runtime: O(n).
 

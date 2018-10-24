@@ -7,6 +7,8 @@
     This version includes an array to store previously-computed values, making this version
     much faster than the traditional.
 
+    This version is capped at 46 to make sure int doesnt overflow.
+
     Runtime: O(n).
 */
 

@@ -3,7 +3,7 @@
 
 /*
     This program uses the math library to solve for fib directly 
-    with a sublinear equation.
+    with a sublinear equation (Binet's Formula).
 
     Note: This version of fib begins with fib[0] = 1, so results
     will differ from other versions of my examples.

@@ -8,6 +8,8 @@
     bottom-up solution. We will compute smaller values of fib and
     store them for caching until we reach out desired solution.
 
+    This version is capped at 46 to make sure int doesnt overflow.
+
     Runtime: O(n).
 */
 
