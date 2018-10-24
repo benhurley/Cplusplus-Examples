@@ -9,6 +9,9 @@
     following two fib computations (fib[i+1] and fib[i+2]). This means
     we dont need to waste the extra space, and can use temp ints instead.
 
+    Also in this version, once the double cannot be expressed as an integer,
+    it is estimated as an exponent. 
+
     Runtime: O(n).
 
 */
@@ -17,37 +20,28 @@
 
 using namespace std;
 
-int fib(int);
+double fib(int);
 
 int main() {
 
-    int num = 0;
-    long int fibNum = 0;
-    cout << "Enter digit of fib you would like (0-46): ";
+    unsigned int num = 0;
+    long double fibNum = 0;
+    cout << "Enter digit of fib you would like: ";
     cin >> num;
-
-    if (num > 46) {
-        cout << "Too big for example, int will overload" << endl;
-        return 0;
-    }
-    else if (num < 0) {
-        cout << "Needs to be a positive integer" << endl;
-        return 0;
-    }
 
     fibNum = fib(num);
 
-    cout << "Fib of " << num << " is " << fibNum << endl;
+    cout << "Fibonacci at position " << num << " is " << fibNum << endl;
 
     return 0;
 }
 
-int fib(int n) {
+double fib(int n) {
     if (n == 0 || n == 1) return n;
     else {
-        int a = 0;
-        int b = 1;
-        int temp = 0;
+        double a = 0;
+        double b = 1;
+        double temp = 0;
 
         for (int i = 2; i < n; ++i) {
             temp = b + a;

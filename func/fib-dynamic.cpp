@@ -1,5 +1,5 @@
 // Benjamin Hurley
-// fib-memoization.cpp
+// fib-dynamic.cpp
 
 /*
     This program simulates fib with a dynamic programming approach.
@@ -9,7 +9,6 @@
     store them for caching until we reach out desired solution.
 
     Runtime: O(n).
-
 */
 
 #include <iostream>
@@ -20,17 +19,13 @@ int fib(int, int[]);
 
 int main() {
 
-    int num = 0;
+    unsigned int num = 0;
     long int fibNum = 0;
-    cout << "Enter digit of fib you would like (0-46): ";
+    cout << "Enter the digit of fib you would like to solve for (0-46): ";
     cin >> num;
 
     if (num > 46) {
         cout << "Too big for example, int will overload" << endl;
-        return 0;
-    }
-    else if (num < 0) {
-        cout << "Needs to be a positive integer" << endl;
         return 0;
     }
 
@@ -38,7 +33,7 @@ int main() {
 
     fibNum = fib(num, fibStore);
 
-    cout << "Fib of " << num << " is " << fibNum << endl;
+    cout << "Fibonacci at position " << num << " is " << fibNum << endl;
 
     return 0;
 }
