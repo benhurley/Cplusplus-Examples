@@ -10,4 +10,8 @@ This project shows examples of many common data structures and algorithms implem
 * [Stack](struct/stack.cpp)
 
 ### Functions
-coming soon
+* [Fibonacci - Traditional Recursion](func/fib-recursive.cpp)
+* [Fibonacci - Recusive w/ Memoization](func/fib-memoization.cpp)
+* [Fibonacci - Dynamic Programming](func/fib-dynamic.cpp)
+* [Fibonacci - Dynamic and Optimized](func/dynamic-opt.cpp)
+
