@@ -10,25 +10,16 @@ map<string, int>::iterator itr;
 int main() {
 
     /*
+		*** C++11 needed for this vector initialization ***
         This example uses a map to parse input and place into seperate buckets.
         The number of occurences of each are counted and stored as values to a particular string (key).
 
-        Estimated runtime O(n + m) including print to console.
+        Estimated runtime: O(n + m) including print to console.
     */
 
     map<string, int> myMap;
 
-    vector<string> logs;
-    logs.push_back("aws");
-    logs.push_back("azure");
-    logs.push_back("aws");
-    logs.push_back("aws");
-    logs.push_back("red hat");
-    logs.push_back("azure");
-    logs.push_back("gcp");
-    logs.push_back("aws");
-    logs.push_back("azure");
-    logs.push_back("red hat");
+    vector<string> logs{ "aws", "azure", "aws", "aws", "red hat", "azure", "gcp", "aws", "azure", "red hat" };
 
     consolidate(logs, myMap);
 
